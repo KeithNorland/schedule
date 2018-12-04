@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'library';
 
 .home {
     height: 100vh;
@@ -7,11 +8,6 @@
     display: grid;
     grid-template-colums: [library-s] 1fr 1fr [library-e schedule-s] 1fr [schedule-e];
     grid-template-rows: 1fr;
-}
-
-.library {
-    grid-colum: library-s/library-e;
-    
 }
 
 .schedule {
