@@ -1,24 +1,27 @@
+
 @import 'variables';
-@import 'library';
 
 .home {
     height: 100vh;
     width: 100vw;
 
     display: grid;
-    grid-template-colums: [library-s] 1fr 1fr [library-e schedule-s] 1fr [schedule-e];
+    grid-template-columns: [library-s] 1fr 1fr [library-e schedule-s] 1fr [schedule-e];
     grid-template-rows: 1fr;
 }
 
+.library {
+    grid-column: library-s/library-e;
+}
+
 .schedule {
-    grid-colum: schedule-s/schedule-e;
+    grid-column: schedule-s/schedule-e;
     position: relative;
     height: 100%;
     width: 100%;
-    
 }
 
-gradient {
+.gradient {
     position: absolute;
     height: 100%;
     width: 100%;
