@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 
+
 class ScheduleCourse extends Component {
     render() {
         return (
@@ -12,4 +13,4 @@ class ScheduleCourse extends Component {
 
 }
 
-export default ScheduleCourse;
+export default ScheduleCourse
