@@ -1,6 +1,6 @@
 import { 
-    FETCH_COURSES, 
-    TOGGLE_ENROLLED 
+    FETCH_COURSES,
+    TOGGLE_ENROLLED
 } from '../actions/types';
 
 export default function(state = [], action) {
@@ -23,6 +23,5 @@ export default function(state = [], action) {
             ]
         default:
             return state;
-
     }
 }
