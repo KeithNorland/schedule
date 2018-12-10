@@ -6,7 +6,7 @@ import Icon from "../icon";
 import Arrow from "../arrow";
 import Action from "../action";
 
-import AnimateHeight from 'react-animate-height';
+import AnimateHeight from "react-animate-height";
 
 class LibraryCourse extends Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class LibraryCourse extends Component {
       <div id={this.id} className="library-course">
         <div className="library-course__title-check">
           <div className="library-course__title">{this.props.title}</div>
-          { this.props.enrolled ? Icon("fas fa-check", "library-course__icon") : ''}
+          {Icon("fas fa-check", "library-course__icon")}
         </div>
         <Arrow
           callback={status => this.handleCallback(status)}
@@ -47,7 +47,7 @@ class LibraryCourse extends Component {
         <Action
           id={this.props.id}
           onClick={() => this.props.toggleEnrolled(this.props.id)}
-          className={`library-course__action ${this.props.enrolled ? 'action-remove' : ''}`}
+          className="library-course__action"
         />
         <AnimateHeight
           duration={300}
